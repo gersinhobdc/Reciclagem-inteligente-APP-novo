@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FF5DD15D">
+
+    <!-- Ícone de troféu e título 'Recompensas' -->
+    <ImageView
+        android:id="@+id/icon_trophy"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:src="@drawable/baseline_money" /> <!-- Substitua com o recurso do ícone do troféu -->
+
+    <TextView
+        android:id="@+id/tv_rewards_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icon_trophy"
+        android:text="Recompensas"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="110dp"/>
+
+    <!-- Texto dos pontos disponíveis -->
+    <TextView
+        android:id="@+id/tv_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_rewards_title"
+        android:text="Você tem X pontos disponíveis para troca."
+        android:textSize="16sp"
+        android:layout_marginLeft="40dp"
+        />
+
+    <!-- Categorias de recompensas -->
+    <!-- Adicione ícones e textos para 'Desconto em boletos', 'Gift-Cards', etc. -->
+
+</RelativeLayout>

@@ -2,18 +2,22 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+
+
+
+    
     <item
-        android:id="@+id/navigation_recycle"
-        android:icon="@drawable/ic_recycle"
-        android:title="@string/title_recycle" />
+        android:id="@+id/activity_recycle"
+        android:icon="@drawable/baseline_recycling"
+        android:title="Recycle" />
 
     <item
-        android:id="@+id/navigation_money"
-        android:icon="@drawable/ic_money"
-        android:title="@string/title_money" />
+        android:id="@+id/activity_rewards"
+        android:icon="@drawable/baseline_money"
+        android:title="Rewards" />
 
     <item
-        android:id="@+id/navigation_profile"
-        android:icon="@drawable/ic_profile"
-        android:title="@string/title_profile" />
+        android:id="@+id/activity_profile"
+        android:icon="@drawable/baseline_person"
+        android:title="Profile" />
 </menu>

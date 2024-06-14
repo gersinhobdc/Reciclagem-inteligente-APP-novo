@@ -11,28 +11,10 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import br.com.etecia.myapp.R;
 
 
+
 public class MainActivity extends AppCompatActivity {
 
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile);
 
-        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
-        bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
-            switch (item.getItemId()) {
-                case R.id.navigation_recycle:
-                    // Navegue para o fragmento de reciclagem
-                    return true;
-                case R.id.navigation_money:
-                    // Navegue para o fragmento de dinheiro
-                    return true;
-                case R.id.navigation_profile:
-                    // Navegue para o fragmento de perfil
-                    return true;
-            }
-            return false;
-        });
-    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
