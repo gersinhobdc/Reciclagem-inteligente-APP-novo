@@ -2,15 +2,16 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="16dp"
     android:background="#FF5DD15D">
 
-    <!-- Ícone de troféu e título 'Recompensas' -->
+
     <ImageView
         android:id="@+id/icon_trophy"
         android:layout_width="400dp"
         android:layout_height="200dp"
-        android:src="@drawable/baseline_money" /> <!-- Substitua com o recurso do ícone do troféu -->
+        android:src="@drawable/baseline_money" />
 
     <TextView
         android:id="@+id/tv_rewards_title"
@@ -22,7 +23,7 @@
         android:textStyle="bold"
         android:layout_marginLeft="110dp"/>
 
-    <!-- Texto dos pontos disponíveis -->
+
     <TextView
         android:id="@+id/tv_points"
         android:layout_width="wrap_content"
@@ -32,8 +33,13 @@
         android:textSize="16sp"
         android:layout_marginLeft="40dp"
         />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/bottom_navigation_menu" />
 
-    <!-- Categorias de recompensas -->
-    <!-- Adicione ícones e textos para 'Desconto em boletos', 'Gift-Cards', etc. -->
 
 </RelativeLayout>
